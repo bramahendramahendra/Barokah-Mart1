@@ -1,0 +1,302 @@
+
+/*-------warna dasar
+
+warna utama : #4CAF50     <hijau muda>
+warna kedua : #fff        <outih>
+
+
+
+------End warna dasar */
+
+/*------------*/
+/*General*/
+/*----------*/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+header {
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+/* Style the topnav links */
+header a {
+    
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+header a:hover , .dropdown:hover .dropbtn{
+    background-color: #ddd;
+    color: black;
+}
+
+.container:after,
+.container:before,
+.row:after,
+.row:before
+ {
+    content:"";display:table;clear:both
+    
+}
+
+.container {
+    padding:0.01em 16px
+    
+}
+
+/* Style the footer */
+/*footer {*/
+/*    background-color: #f1f1f1;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*-------------*/
+/*End General*/
+/*------------*/
+
+
+/*--------------*/
+/*    Body*/
+/*-------------*/
+
+/* Style the content */
+.content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/*--------------*/
+/*   End Body  */
+/*-------------*/
+
+
+/*------------*/
+/*    Table   */
+/*------------*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+    
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*------------------*/
+/*    end button*/
+/*------------------*/
+
+/*-------------*/
+/*    button   */
+/*------------*/
+.button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+    /*-------------------*/
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+    
+}
+
+.button:disabled {
+    cursor:not-allowed;opacity:0.3
+    
+}:disabled * {
+    pointer-events:none
+    
+}
+
+.button:hover {
+    color:#4CAF50!important;
+    background-color:#ddd!important
+}
+
+.btn {
+    color:#fff!important;
+    background-color:#4CAF50!important
+}
+
+/*------------------*/
+/*    end button    */
+/*------------------*/
+
+/*--------------*/
+/*    form      */
+/*---------------*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form-control {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*--------------*/
+/*   end form      */
+/*---------------*/
+
+
+/*--------------*/
+/*   Charts      */
+/*---------------*/
+
+#chart-container {
+    width: 100%;
+    height: auto;
+}
+
+
+/*--------------*/
+/*   end Charts      */
+/*---------------*/
+
+/*--------------*/
+/*   Sidebar      */
+/*---------------*/
+.sidebar {
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+}
+
+@media (min-width:993px){
+    .sidebar{
+        display:block!important
+    }
+}
+
+.bar-block .bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0
+}
+
+
+/*--------------*/
+/*   end Sidebar      */
+/*---------------*/
+
+/*--------------*/
+/*   Dropdown      */
+/*---------------*/
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*--------------*/
+/*   end Dropdown      */
+/*---------------*/
